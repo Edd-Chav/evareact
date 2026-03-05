@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentación Parcial 2</title>
+  <link rel="stylesheet" href="./documentacion2.css">
+</head>
+<body>
+  <div class="metodologias-container">
+    <h1 class="metodologias-title">METODOLOGÍAS DE DESARROLLO DE SW</h1>
+    <h2 class="metodologias-subtitle">¿Qué es una metodología de desarrollo de software?</h2>
+    <p class="metodologias-desc">
+      Las metodologías de desarrollo de software son un conjunto de técnicas y métodos organizativos que se aplican para diseñar soluciones de software informático. El objetivo de las distintas metodologías es el de intentar organizar los equipos de trabajo para que estos desarrollen las funciones de un programa de la mejor manera posible.
+    </p>
+    <h2 class="metodologias-tipos">TIPOS DE METODOLOGÍAS</h2>
+    <div class="metodologias-badges">
+      <button class="badge badge-cascada" onclick="showImage('cascada.png')">CASCADA</button>
+      <button class="badge badge-modelov" onclick="showImage('modelov.png')">MODELO V</button>
+      <button class="badge badge-agiles" onclick="showImage('metodologia.png')">ÁGILES</button>
+      <button class="badge badge-scrum" onclick="showImage('scrum.png')">SCRUM</button>
+      <button class="badge badge-kanban" onclick="showImage('kanban.png')">KANBAN</button>
+      <button class="badge badge-xp" onclick="showImage('xp.png')">XP</button>
+      <button class="badge badge-hibridas" onclick="showImage('hibridas-modernas.png')">HÍBRIDAS</button>
+    </div>
+    <div id="img-modal" class="img-modal" style="display:none;" onclick="closeModal()">
+      <img id="modal-img" src="" alt="Metodología" />
+    </div>
+    <div class="metodologias-link">
+      <h2>LINK A TABLERO DE TRABAJO</h2>
+      <a href="https://home.atlassian.com/o/9b9b608d-f379-4784-b2cc-fbfcfafcfe3f/projects?cloudId=365e9563-148f-4c86-a691-5b2beb0198c0" class="metodologias-jira" target="_blank">---- JIRA ----</a>
+    </div>
+  </div>
+  <script>
+    function showImage(img) {
+      document.getElementById('modal-img').src = img;
+      document.getElementById('img-modal').style.display = 'flex';
+    }
+    function closeModal() {
+      document.getElementById('img-modal').style.display = 'none';
+      document.getElementById('modal-img').src = '';
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+.metodologias-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background: #fff;
+  color: #222;
+  border-radius: 10px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.metodologias-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.metodologias-subtitle {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.metodologias-desc {
+  font-size: 1.15rem;
+  margin-bottom: 40px;
+}
+
+.metodologias-tipos {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin: 40px 0 30px 0;
+}
+
+.metodologias-badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px 18px;
+  margin-bottom: 60px;
+}
+
+.badge {
+  min-width: 180px;
+  padding: 16px 0;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  margin: 6px 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.badge:hover {
+  opacity: 0.8;
+}
+
+.metodologias-img-modal {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.metodologias-img {
+  max-width: 90vw;
+  max-height: 80vh;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.18);
+}
+
+.metodologias-link {
+  margin-top: 40px;
+}
+.metodologias-link h2 {
+  font-size: 2rem;
+  margin-bottom: 18px;
+}
+.metodologias-jira {
+  display: inline-block;
+  padding: 10px 32px;
+  border: 2px solid #1673ff;
+  border-radius: 8px;
+  color: #1673ff;
+  font-size: 1.2rem;
+  text-decoration: none;
+  background: #fff;
+  transition: background 0.2s, color 0.2s;
+}
+.metodologias-jira:hover {
+  background: #1673ff;
+  color: #fff;
+}

@@ -6,7 +6,7 @@ import Metodologias from './Metodologias';
 import miFotoLocal from './yo.jpeg';
 
 function App() {
-  const [showMetodologias] = useState(false);
+    const [showMetodologias] = useState(false);
   return (
     <div className="main-container">
       <div className="content-box">
